@@ -196,14 +196,15 @@ while True:
     sleep(100)
 ```
 
-What the code does:
+### Code 2: Controlling Tri-color LEDs with the distance sensor and the position servo with the dial sensor
+
+What the code does: controlling the 
 * Displays the value of the distance and dial sensors on the serial console
 * The distance sensor in sensor port 1 is used to control the color of the tri-color LED in tricolor port 1
   * The LED is green if the distance sensor reads further than or equal to 40cm
   * The LED is yellow if the distance sensor reads closer than 40cm, but further than 20 cm
   * The LED is red if the distance sensor reads further than or equal to 20cm
 * The dial sensor in sensor port 2 is used to control the angle of the position servo attached to servo port 1
-
 
 ```
     from microbit import *
@@ -240,6 +241,23 @@ What the code does:
         sleep(100)
 ```
 
+### Code 3: Show a beating heart on the micro:bit and move the position servo from 180 to 0 degrees and back
+
+```
+# Imports go at the top
+from microbit import *
+from hummingbird import *
+
+hummingbird.startHummingbird()
+
+while True:
+    hummingbird.setPositionServo(1, 180)
+    display.show(Image.HEART)
+    sleep(1000)
+    hummingbird.setPositionServo(1, 0)
+    display.show(Image.HEART_SMALL)
+    sleep(1000)
+```
 _____
 
 ## License
@@ -261,3 +279,4 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER 
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
