@@ -162,7 +162,7 @@ Notes:
 
 ---
 
-### Code 1: Controlling rotation servos with microi:bit buttons
+### Code 1: Controlling rotation servos with micro:bit buttons
 
 What the code does:
 * When the program starts the rotation servos in servo ports 3 and 4 are stopped
