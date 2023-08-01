@@ -11,6 +11,19 @@ _____
    * [Original Birdbrain MakeCode library for Hummingbird bit](https://github.com/BirdBrainTechnologies/pxt-hummingbird-bit) (MIT License)
 * **IMPORTANT**: This library was built and tested using the micro:bit v2. It is unlikely to function properly on the micro:bit v1 due to memory constraints.**
 _____
+## Adding the library
+
+In the [micro:bit Python Editor](https://python.microbit.org/:
+1. Select the "Project" tab on the menu on the left side of interface
+2. Click the "Create file" button
+3. Name the file "hummingbird.py" and click the "Create" button
+4. Copy the content of the [hummingbird.py file from this github repo](https://github.com/CodeJoyEducation/hummingbird-python/blob/main/hummingbird.py)
+7. Click back over to the main.py and import the new library by adding the line below under the `from microbit import *` line:
+  * `from hummingbird import hummingbird`
+
+Now just check out the documentation below to see how to use the library in your code!
+
+_____
 ## API Reference
 ---
 ### startHummingbird()
