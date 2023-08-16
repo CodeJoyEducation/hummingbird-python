@@ -13,7 +13,7 @@ _____
 _____
 ## Adding the library
 
-In the [micro:bit Python Editor](https://python.microbit.org/:
+In the [micro:bit Python Editor](https://python.microbit.org/):
 1. Select the "Project" tab on the menu on the left side of interface
 2. Click the "Create file" button
 3. Name the file "hummingbird.py" and click the "Create" button
