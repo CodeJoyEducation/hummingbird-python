@@ -1,5 +1,6 @@
 """
 Library to use the BirdBrain Hummingbird bit with MicroPython on the micro:bit v2.
+Source: https://github.com/CodeJoyEducation/microbit-hummingbird-python
 
 Refactored from the MakeCode library for MicroPython on the micro:bit v2 by CodeJoy (codejoy.org)
 Original MakeCode library: https://github.com/BirdBrainTechnologies/pxt-hummingbird-bit (MIT License)
